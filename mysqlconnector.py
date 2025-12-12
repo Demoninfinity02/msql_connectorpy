@@ -154,7 +154,7 @@ def choice():
                     n5=input('enter the reference field value')         
                     z="update {} set {}={} where {}={};".format(n1,n2,n3,n4,n5)
                     cr.execute(z)
-                    cr.commit()
+                    cn.commit()
                 elif n==16:
                     n1=input('enter table name')
                     n2=input('enter the reference field name ')
