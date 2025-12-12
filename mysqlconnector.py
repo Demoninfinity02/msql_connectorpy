@@ -8,7 +8,6 @@ def tome(a,t=0.000000000000125):
         sleep(t)
     print()
 def choice():
-     
     tome('===================================================WELCOME==============================================================',0.00000000125)
     tome('                               1.SHOW ALL DATABASES '                                                           )
     tome('                               2.CREATE NEW DATABASE'                                                             )
@@ -30,7 +29,7 @@ def choice():
     tome('                              18.EXIT THE PROGRAM')
     tome('========================================================================================================================',0.00000000125)
     import mysql.connector as p
-    cn=p.connect(host='localhost',user='root',password='Krishna@02')
+    cn=p.connect(host='localhost',user='root',password='password')#use your mysql password here in the password section
     cr=cn.cursor()
         
     while True:
@@ -194,49 +193,10 @@ def choice():
 
 
     
-'''
-c=p.connect(host='localhost',user='root',password='lps123',database='lpsclass12a')
-r=cn.cursor()
-def update():
-    z="update doctor set degree='BDSM' where did=5;"
-    r.execute(z)
-    c.commit()
-c.close
-update()
-
-##new program
-cn=p.connect(host='localhost',user='root',password='lps123',database='school22')
-cr=cn.cursor()
-def update1():
-    z="update scholar set sid=1 where sname='ajay;"
-    cr.execute(z)
-    cn.commit()
-cn.close
-update1()
-
-##new program
-c=p.connect(host='localhost',user='root',passwd='lps123',database='school22')
-r=c.cursor()
-def filtdta():
-    z="select dname from doctor where salary>778530;"
-    r.execute(z)
-    d=r.fetchall()
-    print(d)
-c.close
-filtdta()
-elif n==6:
-            i=input('enter the table name:-')
-            cr.execute("desc"+i)
-            d=cr.rowcount
-            z='insert into {} values('.format(i)
-            for k in range(d-1):
-                n1=input('enter the field value=')
-                n2=input('enter the field value=')
-                if n1=='0' or n2=='0':'''
 
 def MAIN():
         pwd=e.get()
-        if pwd=='743209':
+        if pwd=='password':#enter your password 
                 win.destroy()
                 choice()
         else:
